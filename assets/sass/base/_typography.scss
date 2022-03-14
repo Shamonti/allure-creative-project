@@ -1,0 +1,87 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark-1;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: capitalize;
+  margin-bottom: 6rem;
+
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 7rem;
+    text-align: left;
+
+    animation: moveInLeft 1s ease-out;
+
+    @include respond(phone) {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: capitalize;
+
+    animation: moveInLeft 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.heading-secondary {
+  font-size: $default-font-size;
+  font-weight: 500;
+  color: $color-secondary;
+  padding: 0 1rem;
+
+  display: block;
+  background-color: $color-primary;
+  width: max-content;
+}
+
+.heading-tertiary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.heading-tab {
+  background-color: $color-primary;
+  font-size: $default-font-size;
+  font-weight: 600;
+  color: $color-secondary;
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
+}

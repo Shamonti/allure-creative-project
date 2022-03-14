@@ -1,0 +1,82 @@
+.section-footer {
+  background-color: $color-primary;
+  font-size: $default-font-size;
+  color: $color-secondary;
+
+  img {
+    width: 15rem;
+  }
+
+  .social-icons {
+    display: flex;
+    padding: 0;
+    a {
+      color: $color-secondary;
+      &:hover {
+        color: $color-dark-green;
+      }
+    }
+    li {
+      transition: all 0.3s;
+      margin-right: 2.75rem;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+    .social-link {
+      font-size: 2rem;
+    }
+  }
+  hr {
+    margin-top: 4rem;
+    color: $color-grey-dark-1;
+  }
+  .form-control {
+    font-size: $default-font-size;
+    padding: 1rem;
+    border: 1px solid $color-white;
+    &:focus {
+      border: 1px solid $color-white;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  .footer-title {
+    font-weight: 600;
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    color: $color-secondary;
+  }
+  ul {
+    padding: 0;
+
+    a {
+      color: $color-secondary;
+
+      &:hover {
+        color: $color-dark-green;
+      }
+    }
+  }
+  .footer-heading {
+    color: $color-secondary;
+    font-weight: 600;
+  }
+  .legal-pages {
+    display: flex;
+    flex-direction: row;
+    li {
+      padding: 0 1rem;
+      &:not(:last-child) {
+        border-right: 1px solid $color-grey-light;
+      }
+    }
+  }
+  .footer-link {
+    color: $color-dark-green;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}

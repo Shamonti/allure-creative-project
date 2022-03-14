@@ -1,0 +1,31 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "creative site template",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "author": "Shamonti",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "webpack": "^5.39.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shamonti/starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shamonti/starter/issues"
+  },
+  "homepage": "https://github.com/Shamonti/starter#readme"
+}
